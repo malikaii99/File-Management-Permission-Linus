@@ -9,6 +9,7 @@ You are a security professional at a large organization. You mainly work with th
 
 Your task is to examine existing permissions on the file system. You’ll need to determine if the permissions match the authorization that should be given. If they do not match, you’ll need to modify the permissions to authorize the appropriate users and remove any unauthorized access.
 
+<h2>Work load</h2>
 To accomplish this objective, I undertook the following actions:
 
 <h3>Check file and directory details</h3>
