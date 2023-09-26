@@ -45,10 +45,7 @@ The following code demonstrates how I used Linux commands to change the permissi
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. 
 
-<h3>Summary/Recommendations</h3>
-My organization only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions.
-
-The following code demonstrates how I used Linux commands to change the permissions:
+<h3>Change directory permissions</h3>
 My organization only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions.
 
 The following code demonstrates how I used Linux commands to change the permissions:
@@ -57,7 +54,6 @@ The following code demonstrates how I used Linux commands to change the permissi
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added.
 
-The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added.
 
 <h3>Summary</h3>
 I adjusted several permissions to align with the authorization requirements set by my organization for the files and directories within the projects  directory. To initiate this process, I began by employing the ls -la command to inspect the current permissions of the directory. This initial assessment informed my subsequent actions. Subsequently, I utilized the chmod command on multiple occasions to modify the permissions of both files and directories as needed.
