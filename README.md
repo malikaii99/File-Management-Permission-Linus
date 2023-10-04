@@ -14,6 +14,9 @@ Your task is to examine existing permissions on the file system. You’ll need t
 
 <h2>Work load</h2>
 
+- <a> Full PDF </a>
+  - [PDF includes screenshot](https://github.com/malikaii99/Security-Audit-Botium-Toys/blob/e0549c8f436c765d70ff8ecd57e45f92ade54da8/IT%20Email%20SS.png)
+    
 To accomplish this objective, I undertook the following actions:
 
 <h3>Check file and directory details</h3>
