@@ -19,12 +19,14 @@ Your task is to examine existing permissions on the file system. You’ll need t
     
 To accomplish this objective, I undertook the following actions:
 
+
 <h3>Check file and directory details</h3>
 
 The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.
 
 
 The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.
+
 
 <h3>Describe the permissions string</h3>
 
@@ -36,6 +38,7 @@ The 10-character string can be deconstructed to determine who is authorized to a
 
 For example, the file permissions for project_t.txt are -rw-rw-r--. Since the first character is a hyphen (-), this indicates that project_t.txt is a file, not a directory. The second, fifth, and eighth characters are all r, which indicates that user, group, and other all have read permissions. The third and sixth characters are w, which indicates that only the user and group have write permissions. No one has execute permissions for 
 
+
 <h3>Change file permission </h3>
 
 The organization determined that other shouldn't have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined project_k.txt must have the write access removed for other.
@@ -46,6 +49,7 @@ The following code demonstrates how I used Linux commands to do this:
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made.
 
+
 <h3>Change file permissions on a hidden file</h3>
 
 The research team at my organization recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. 
@@ -55,6 +59,7 @@ The following code demonstrates how I used Linux commands to change the permissi
 
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. 
+
 
 <h3>Change directory permissions</h3>
 
