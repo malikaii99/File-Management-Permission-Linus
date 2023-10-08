@@ -1,4 +1,4 @@
-# File-Management-Permission-Linux
+# File Management Permission using Linux
 <h1>Description</h1>
 
 The research team within my organization has a requirement to revise the file permissions for specific files and directories situated within the project directory. The existing permissions are not in alignment with the necessary authorization level. The objective of reviewing and adjusting these permissions is to bolster the security of their system.
